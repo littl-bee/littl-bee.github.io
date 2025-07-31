@@ -1,0 +1,22 @@
+<header>
+    <div class="settings-switches">
+        <div class="switch-wrapper" id="theme-switch">
+            <div id="switch-container">
+                <div class="switch-circle"></div>
+            </div>
+        </div>
+
+
+        <div class="lang-switcher">
+            <button mat-button [matMenuTriggerFor]="languageMenu" aria-label="Select language">
+                {{ selectedLanguage }}
+            </button>
+            <mat-menu #languageMenu="matMenu">
+                <button mat-menu-item (click)="selectLanguage('en')">English</button>
+                <button mat-menu-item (click)="selectLanguage('es')">Español</button>
+            </mat-menu>
+        </div>
+
+          
+    </div>
+</header>
